@@ -1,0 +1,31 @@
+:root{
+    --color-scrollbar: #d3d3d4;
+    --color-background-scrollbar: #eee;
+}
+/* SCROLL MOZ */
+.content-page {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+/* SCROLL CHROME */
+.content-page::-webkit-scrollbar{
+    width: 25px;
+    background: transparent;
+}
+.content-page::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+.content-page:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+.content-page:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 8px var(--color-secondary);
+}
+.content-page::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin: 40px 0;
+}
