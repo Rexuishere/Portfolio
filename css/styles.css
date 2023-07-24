@@ -284,8 +284,84 @@ h1, h2, h3, h4, h5, h6 {
     height: 30px;
     background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100% );
     background-size: 15px 10px;
+    opacity: 0.5;
 }
 
 .title-color{
     color: var(--color-secondary);
+}
+
+/* Información Personal */
+.about-services{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.about-personalInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+
+}
+.personalInfo-bio{
+    flex-basis: 56%;
+}
+.personalInfo-description{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+.personalInfo-data{
+    flex-basis: 44%;
+    padding: 0 1.5rem;
+}
+.personalInfo-title{
+    margin-right: 0.5rem; 
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+/* Servicios */
+.services-header{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.services-title{
+    font-size: 2.2rem;
+}
+
+.services-title::after{
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: -16px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100% );
+    background-size: 15px 10px;
+    opacity: 0.5;
+}
+
+.services-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services-service{
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5em;
+}
+
+.service-icon .fa-solid{
+    color: var(--color-secondary);
+    font-size: 2.6rem;
+}
+.service-title{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+.service-description{
+    font-size: 1.5rem;
+    text-align: justify;
 }
