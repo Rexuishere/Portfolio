@@ -12,6 +12,9 @@
     --color-subtitle: #888;
     --color-text: #555;
 
+    --color-border-reviews:#E5E6E7;
+    --color-company:#A5A6A7;
+
     --position-start-top: 7rem;
 
 }
@@ -292,10 +295,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Información Personal */
-.about-services{
-    width: 100%;
-    margin-bottom: 3rem;
-}
 .about-personalInfo{
     display: flex;
     flex-direction: row;
@@ -320,16 +319,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 /* Servicios */
-.services-header{
+.about-services,
+.about-reviews
+{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.services-header,
+.reviews-header{
     display: inline-block;
     position: relative;
     margin-bottom: 2.5rem;
 }
-.services-title{
+.services-title,
+.reviews-title{
     font-size: 2.2rem;
 }
 
-.services-title::after{
+.services-title::after,
+.reviews-title::after{
     content: "";
     position: absolute;
     top: 17px;
@@ -364,4 +372,66 @@ h1, h2, h3, h4, h5, h6 {
 .service-description{
     font-size: 1.5rem;
     text-align: justify;
+}
+/* Reviews */
+.reviews-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.reviews-review{
+    flex-basis: calc(50% - 3rem);
+
+    border:2px solid var(--color-border-reviews);
+    border-radius: 2rem;
+    padding-top:0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+
+}
+.review-imgContainer{
+    width: 100%;
+}
+.review-image{
+    max-width: 9rem;
+    max-height: 9rem;
+    border-radius: 9rem;
+    
+    margin: 0 auto;
+    margin-top: -4.5rem;
+    margin-bottom: 2rem;
+
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.22);
+}
+.review-description{
+    margin-bottom: 1rem;
+}
+.review-text{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+.review-author{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.author-name{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.review-company{
+    color: var(--color-company);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.review-icon{
+    font-size: 4rem;
+    opacity: 0.5 ;
+    color: var(--color-secondary);
 }
