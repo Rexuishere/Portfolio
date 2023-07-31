@@ -308,6 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 .personalInfo-description{
     font-size: 1.5rem;
     line-height: 2.4rem;
+    margin-right: 5rem;
 }
 .personalInfo-data{
     flex-basis: 44%;
@@ -322,7 +323,8 @@ h1, h2, h3, h4, h5, h6 {
 .about-services,
 .about-reviews,
 .about-clients,
-.about-prices
+.about-prices,
+.about-extra
 {
     width: 100%;
     margin-bottom: 3rem;
@@ -330,7 +332,8 @@ h1, h2, h3, h4, h5, h6 {
 .services-header,
 .reviews-header,
 .clients-header,
-.prices-header{
+.prices-header,
+.extra-header{
     display: inline-block;
     position: relative;
     margin-bottom: 2.5rem;
@@ -338,14 +341,16 @@ h1, h2, h3, h4, h5, h6 {
 .services-title,
 .reviews-title,
 .clients-title,
-.prices-title{
+.prices-title,
+.extra-title{
     font-size: 2.2rem;
 }
 
 .services-title::after,
 .reviews-title::after,
 .clients-title::after,
-.prices-title::after{
+.prices-title::after,
+.extra-title::after{
     content: "";
     position: absolute;
     top: 17px;
@@ -414,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -4.5rem;
     margin-bottom: 2rem;
 
-    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.22);
+    box-shadow: 4px 12px 10px -8px rgba(34,127,220, 0.45);
 }
 .review-description{
     margin-bottom: 1rem;
@@ -501,8 +506,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0rem;
 }
 .prices-box:hover{
-    box-shadow: 0 18px 24px -5px rgba(0, 0, 0,  0.15);
-    transform: translateY(-1rem);
+    /* box-shadow: 0 18px 24px -5px rgba(0, 0, 0,  0.15); */
+    box-shadow: 2px 18px 24px -10px rgba(34,127,220, 0.45);
+    transform: translateY(-0.7rem);
 }
 .prices-subtitle{
     margin-bottom: 3rem;
@@ -536,7 +542,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .prices-buy{
     padding-top: 2.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 
 }
 .prices-btn{
@@ -550,4 +556,51 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px solid var(--color-secondary);
     background-color: var(--color-secondary);
     color: var(--color-main) !important;
+}
+.prices-reward{
+    font-size: 1.4rem;
+    padding: 0.6rem 0rem;
+}
+/* Extra */
+
+.extra-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.extra-info{
+    flex-basis: 30%;
+    padding: 2.5rem 1rem;
+    border: 2px solid var(--color-border-reviews);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    
+
+}
+.extra-info:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 2px 18px 24px -10px rgba(34,127,220, 0.45);
+}
+.extra-icon{
+    font-size: 3.3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+.extra-subtitle{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+.extra-quantity{
+    display: block;
+    margin: 1.5rem 1rem;
+    margin-bottom: 0;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    color: var(--color-subtitle);
+    
 }
