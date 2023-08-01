@@ -257,9 +257,10 @@ h1, h2, h3, h4, h5, h6 {
     right: 100%;
 }
 
-/* SOBRE MI */
+/* ESTILOS GENERALES (SOBRE MI, ESTUDIOS) */
 
-.content-about {
+.content-about,
+.content-resume {
     display: block;
     height: 100%;
     min-height: 100%;
@@ -268,17 +269,20 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto;
    
 }
-.about-header {
+.about-header,
+.resume-header {
     display: inline-block;
     margin-bottom: 5rem;
 }
 
-.about-title {
+.about-title,
+.resume-title{
     font-size: 3.2rem;
     position: relative;
 }
 
-.about-title::after{
+.about-title::after,
+.resume-title::after{
     content: "";
     position: absolute;
     top: 17px;
@@ -604,3 +608,28 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-subtitle);
     
 }
+/* CURRICULUM SECTION */
+.resume-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%;
+}
+.resume-left{
+    flex-basis: 50%;
+    margin-top: 5rem;
+    margin-right: 5rem;
+}
+.resume-right{
+    flex-basis: 49%;
+    margin-top: 5rem;
+}
+
+/* LEFT SIDE CURRICULUM */
+.timeline-description{
+    text-align: justify;
+    margin-bottom: 2.5rem;
+}
+
+
+/* RIGHT SIDE CURRICULUM */
