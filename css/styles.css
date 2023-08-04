@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--color-main);
     border-radius: 20rem;
 }
+
 /* ShadowEfect Outside Img */
 .userInfo-containerImage::after{
     content: "";
@@ -625,7 +626,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .resume-right{
     flex-basis: 41%;
-   
+    padding: 0 1.5rem;
 }
 
 /* LEFT SIDE CURRICULUM */
@@ -711,3 +712,38 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* RIGHT SIDE CURRICULUM */
+.resume-skills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.skills-title{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-text{
+    font-size: 1.3rem; 
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+.skills-number{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+.skills-progressbar{
+    height: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+    background-color: var(--color-main);
+    margin-bottom: 1rem;
+    opacity: 0.90;
+
+}
+.skills-percentage{
+    height: 0.8rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-main);
+    border-radius: 1rem;
+}
