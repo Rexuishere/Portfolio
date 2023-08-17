@@ -102,4 +102,30 @@
     .extra-info{
         flex-basis: 100%;
     }
+    .about-personalInfo {
+        flex-direction: column;
+    }
+    .personalInfo-data {
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .services-container {
+        flex-direction: column;
+    }
+    .clients-container {
+        
+        gap: 2rem;
+    }
+    .resume-container {
+        flex-direction: column;
+    }
+    .portfolio-gallery {
+        flex-direction: column;
+    }
+    .blog-article{
+        flex-direction: column;
+    }
+    .article-mask{
+        height: 18rem;
+    }
 }   
